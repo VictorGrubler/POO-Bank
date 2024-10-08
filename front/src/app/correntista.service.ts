@@ -1,0 +1,15 @@
+import { Injectable } from '@angular/core';
+import { Correntista } from './model/correntista';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+@Injectable({
+  providedIn: 'root'
+})
+export class CorrentistaService {
+  constructor(
+    private http: HttpClient
+  ) { }
+  public cadastrar (Correntista: Correntista): Observable<any> {
+    return this.http.post("http://localhost:3000/correntistas", Correntista);
+  }
+}

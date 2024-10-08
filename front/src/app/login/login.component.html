@@ -11,7 +11,10 @@
   
              <label for="password">Senha</label>
              <input type="password" id="username" placeholder="Senha">
-             <button class="w-100 btn btn-lg btn-primary mb-2 fw-bold" type="button" (click)="submit()">Acessar conta</button>
+             <div class = "buttons">
+             <button pButton (click)="logar()">Logar!</button>
+             <button pButton (click)="cadastrar()">Cadastre-se!</button>
+            </div>
          </form>
         </div>
   </div>

@@ -5,9 +5,16 @@
     border: none;
 }
 
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;
+}
 
 .loginPage {
-    background-image:url('../../../public/fundobanco.jpg');
+    background-image:url('../../../public/fundopaginas.png');
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 
@@ -24,8 +31,8 @@
 
 
 .quadradoLogin{
-    width: 350px;
-    height: 450px;
+    width: 400px;
+    height: 600px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -39,16 +46,7 @@
     width: 350px;
     height: 450px;
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 30px;
-}
-
-.userLogin form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 .userLogin label{
@@ -65,13 +63,13 @@
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 10px;
-
-}
-.buttons{
     gap: 10px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    align-items: center;
+
 }
+
 button {
     padding: 15px;
     background-color: #c43131;
@@ -81,5 +79,14 @@ button {
     font-size: 1rem;
     cursor: pointer;
     width: 30vh;
+    align-content: center;
     justify-content: center;
+}
+
+.buttons{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
 }

@@ -1,20 +1,16 @@
-<div class="red-bar top-bar"></div>
-        <div class="bank-header">
-            <img width="300px" height="150px" src="mazebankoflossantos.png" alt="">
-        </div>
-        <div class="bank-app">
-        <div class="red-bar middle-bar">
-            <div class = "escolha">
-                <p>Escolha um serviço!</p>
-            </div>
-        </div>
-        <div class="balance">
-            <p>Account balance: <strong>$30,001,357.00</strong></p>
-        </div>
-        <div class="buttons">
-            <button>Depositar</button>
-            <button>Sacar</button>
-            <button>Extrato</button>
-        </div>
+<div class = loginPage>
+    <div class="quadradoLogin">
+    <div class="imgLogo">
+        <img width="250px" src="mazebankoflossantos.png" alt="logo1">
     </div>
-
+    <h1>Olá , Victor Grubler</h1>
+    <p>Escolha o serviço!</p>
+        <div class="userLogin">
+             <div class="buttons">
+                <button pButton (click)="pix()">Pix!</button>
+                <button pButton (click)="extrato()">Extrato!</button>
+                <button pButton (click)="sair()">Sair!</button>
+                </div>
+        </div>
+  </div>
+</div>
