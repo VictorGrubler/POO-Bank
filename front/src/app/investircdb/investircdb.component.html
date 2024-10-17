@@ -1,0 +1,25 @@
+<div class="loginPage">
+    <div class="quadradoLogin">
+        <div class="imgLogo">
+            <img width="150px" src="Maze_Bank_Logo.png" alt="logo1">
+        </div>
+        <div class="userLogin">
+            <h1>Área de Investimento!</h1>
+        </div>
+        <div class="inputValor">
+            <form>
+                <label for="valorAporte">Valor do aporte mensal:</label>
+                <input type="number" id="valorAporte" placeholder="Insira o valor">
+                
+                <label for="tempoAplicado">Data final do investimento:</label>
+                <input type="date" id="tempoAplicado" placeholder="Data limite da aplicação">
+                
+                <button type="button" (click)="calcularMeses()">Calcular</button>
+            </form>
+            <div class="resultado">
+                <p>Total de meses até a data selecionada: {{ totalMeses }} meses</p>
+                <p>Montante acumulado com juros: R$ {{ aporteTotal | number: '1.2-2' }}</p>
+            </div>
+        </div>
+    </div>
+</div>
